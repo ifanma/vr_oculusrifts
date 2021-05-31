@@ -1,7 +1,7 @@
 # vr_oculusrifts
 
-首先安装OpenHMD
+棣栧厛瀹夎OpenHMD
 
-然后安装openhmd-ros
+鐒跺悗瀹夎openhmd-ros
 
-然后设置a.conf
+鐒跺悗璁剧疆a.conf
