@@ -26,14 +26,14 @@ This package was tested on Ubuntu 16.04.01 and 16.04.02. For installation follow
 
 * `sudo apt-get install python-dev cython cython3`
 * `pip install Cython`
-* `sudo apt install libhidapi-dev libhidapi-libusb0 libhidapi-libusb0-dbg`
-* `sudo apt install glew-utils libglew-dbg libglew-dev`
+* `sudo apt install libhidapi-dev libhidapi-libusb0`
+* `sudo apt install glew-utils libglew-dev`
 * Add these udev rules:
 
 	`echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="2833", MODE="0666", GROUP="plugdev"' > /etc/udev/rules.d/83-hmd.rules`
     `echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="0bb4", MODE="0666", GROUP="plugdev"' >> /etc/udev/rules.d/83-hmd.rules`
     `echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="28de", MODE="0666", GROUP="plugdev"' >> /etc/udev/rules.d/83-hmd.rules`
-    `udevadm control --reload-rules`
+    `sudo udevadm control --reload-rules`
 * Clone this repo on your `catkin_ws` folder
 * Install the openhmd package from https://github.com/OpenHMD/OpenHMD/
 * `sudo ldconfig`
